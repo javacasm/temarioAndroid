@@ -29,16 +29,8 @@
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b7" />
-
-
-
-
-
-
-
-
 
 
             <Button
@@ -46,46 +38,23 @@
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b8" />
-
-
-
-
-
-
-
-
 
             <Button
                 android:id="@+id/b9"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b9" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <Button
                 android:id="@+id/bSuma"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="+" />
 
         </TableRow>
@@ -97,62 +66,36 @@
             android:layout_height="wrap_content"
             android:layout_margin="3dp" >
 
-
-
-
-
-
-
-
             <Button
                 android:id="@+id/b4"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b4" />
-
-
-
-
-
-
 
             <Button
                 android:id="@+id/b5"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b5" />
-
-
-
-
-
-
 
             <Button
                 android:id="@+id/b6"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b6" />
-
-
-
-
-
-
-
 
             <Button
                 android:id="@+id/bResta"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/bmenos" />
 
         </TableRow>
@@ -164,60 +107,36 @@
             android:layout_height="wrap_content"
             android:layout_margin="3dp" >
 
-
-
-
-
-
-
             <Button
                 android:id="@+id/b1"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b1" />
-
-
-
-
-
 
             <Button
                 android:id="@+id/b2"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b2" />
-
-
-
-
-
-
 
             <Button
                 android:id="@+id/b3"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b3" />
-
-
-
-
-
-
-
 
             <Button
                 android:id="@+id/bMultiplicacion"
                 style="@style/boton.weigth1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/bpor" />
 
         </TableRow>
@@ -229,29 +148,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="3dp" >
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <Button
                 android:id="@+id/b0"
                 style="@style/boton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/b0" />
 
             <Button
@@ -260,17 +163,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/bpunto" />
-
-
-
-
-
-
-
-
-
 
             <Button
                 android:id="@+id/bDivision"
@@ -278,7 +172,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/bdivido" />
 
         </TableRow>
@@ -290,39 +184,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="3dp" >
 
-
-
-
-
-
-
-
-
-
-
-
-
             <Button
                 android:id="@+id/bIgual"
                 style="@style/boton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/bigual" />
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <Button
                 android:id="@+id/bC"
@@ -330,7 +199,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="botonclic"
+                android:onClick="pulsacion"
                 android:text="@string/bc" />
 
         </TableRow>

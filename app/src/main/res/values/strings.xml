@@ -6,6 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Calculadora</string>
+    <string name="pulsacion_tecla">Pulsacion de tecla!!!</string>
     <string name="b0">0</string>
     <string name="b1">1</string>
     <string name="b2">2</string>
