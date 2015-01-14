@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -19,9 +21,17 @@ public class MainActivity extends ActionBarActivity {
 
     public void pulsacion(View v)
     {
-        Toast.makeText(this, R.string.pulsacion_tecla, Toast.LENGTH_LONG).show();
 
+        Button bt=(Button)v;
+        String strBtText=bt.getText().toString();
+        String strTextoAviso="Pulsacion tecla "+strBtText+" !!!!";
+       // Toast.makeText(this, strTextoAviso, Toast.LENGTH_LONG).show();
 
+        View vResultado=findViewById(R.id.tvResultado);
+        TextView tvResultado=(TextView)vResultado;
+        String strValorAntiguo=tvResultado.getText().toString();
+        String strValorNuevo=strValorAntiguo+strBtText;
+        tvResultado.setText(strValorNuevo);
     }
 
     @Override
