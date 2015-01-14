@@ -16,13 +16,18 @@
             android:layout_height="wrap_content"
             android:text="0"
             android:id="@+id/tvResultado"
-            android:textSize="35dp" />
+            android:textSize="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="#ffadbbcf"
+            android:textAlignment="gravity"
+            android:gravity="right" />
 
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="3dp" >
+            android:layout_margin="3dp"
+            android:layout_gravity="bottom">
 
             <Button
                 android:id="@+id/b7"
