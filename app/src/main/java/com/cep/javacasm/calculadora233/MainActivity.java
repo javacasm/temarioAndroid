@@ -20,6 +20,8 @@ public class MainActivity extends ActionBarActivity {
     public void pulsacion(View v)
     {
         Toast.makeText(this, R.string.pulsacion_tecla, Toast.LENGTH_LONG).show();
+
+
     }
 
     @Override
