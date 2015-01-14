@@ -26,7 +26,7 @@
 
             <Button
                 android:id="@+id/b7"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -35,7 +35,7 @@
 
             <Button
                 android:id="@+id/b8"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -43,7 +43,7 @@
 
             <Button
                 android:id="@+id/b9"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -51,11 +51,11 @@
 
             <Button
                 android:id="@+id/bSuma"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
-                android:text="+" />
+                android:text="@string/bmas" />
 
         </TableRow>
 
@@ -68,7 +68,7 @@
 
             <Button
                 android:id="@+id/b4"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -76,7 +76,7 @@
 
             <Button
                 android:id="@+id/b5"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -84,7 +84,7 @@
 
             <Button
                 android:id="@+id/b6"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -92,7 +92,7 @@
 
             <Button
                 android:id="@+id/bResta"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -109,7 +109,7 @@
 
             <Button
                 android:id="@+id/b1"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -117,7 +117,7 @@
 
             <Button
                 android:id="@+id/b2"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -125,7 +125,7 @@
 
             <Button
                 android:id="@+id/b3"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -133,7 +133,7 @@
 
             <Button
                 android:id="@+id/bMultiplicacion"
-                style="@style/boton.weigth1"
+                style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="pulsacion"
@@ -159,19 +159,13 @@
 
             <Button
                 android:id="@+id/bPunto"
-                style="@style/boton.weigth1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                style="@style/boton.weight1"
                 android:onClick="pulsacion"
                 android:text="@string/bpunto" />
 
             <Button
                 android:id="@+id/bDivision"
-                style="@style/boton.weigth1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                style="@style/boton.weight1"
                 android:onClick="pulsacion"
                 android:text="@string/bdivido" />
 
@@ -186,21 +180,16 @@
 
             <Button
                 android:id="@+id/bIgual"
-                style="@style/boton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                style="@style/boton.weight1"
                 android:onClick="pulsacion"
                 android:text="@string/bigual" />
 
             <Button
                 android:id="@+id/bC"
                 style="@style/boton.rojo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:onClick="pulsacion"
-                android:text="@string/bc" />
+                android:text="@string/bc"
+                android:typeface="monospace" />
 
         </TableRow>
 
