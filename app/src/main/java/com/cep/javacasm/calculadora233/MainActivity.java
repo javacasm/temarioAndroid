@@ -88,7 +88,7 @@ public class MainActivity extends ActionBarActivity {
         int operando2=Integer.parseInt(strOperando2);
 
         // En funcion del operador hacer el calculo
-        int iResultado;
+        int iResultado=0;
         if(idOperacion==R.id.bSuma)
         {    iResultado=operando1+operando2;          }
 
@@ -104,7 +104,13 @@ public class MainActivity extends ActionBarActivity {
         // Comprobar la longitud del resultado
 
         // Mostrar el resultado
-
+        String strResultado=Integer.toString(iResultado);
+        if(strResultado.length()<iLongitudMaxima)
+        {tvResultado.setText(strResultado);         }
+        else {
+            Toast.makeText(this, R.string.LongitudMaxima, Toast.LENGTH_LONG).show();
+            pulsacionCE(v);
+        }
 
     }
     public void teclaPunto(View v) {
