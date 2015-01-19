@@ -88,6 +88,7 @@ Se usan:
 * Layout
 * Text
 * Aspecto
+* Jerarquia de herencia en controles
 
 * Ejemplo de propiedades en diversos controles
 
@@ -134,3 +135,8 @@ Se usan:
 
 * Contenidos
 * Tipos
+
+## Tratamiento de errores
+
+* Detección en validaciones
+* Excepciones
