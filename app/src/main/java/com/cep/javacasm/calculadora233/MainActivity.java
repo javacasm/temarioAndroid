@@ -25,7 +25,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void pulsacionCE(View v)
-    {//   View vResultado=findViewById(R.id.tvResultado);
+    {
+    //   View vResultado=findViewById(R.id.tvResultado);
 //        TextView tvResultado=(TextView)vResultado;
         tvResultado.setText("");
     }
@@ -42,6 +43,7 @@ public class MainActivity extends ActionBarActivity {
         String strValorNuevo=strValorAntiguo+strBtText;
 
         tvResultado.setText(strValorNuevo);
+
 
     }
 
