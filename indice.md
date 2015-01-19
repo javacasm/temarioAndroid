@@ -76,3 +76,16 @@
 * OnClic
 * Toast
 * ¿Otros eventos?: onCreate
+
+
+## Activities
+
+* Creación
+* Cierre
+* Estructura
+* Necesidad de comunicación
+
+## Intent
+
+* Contenidos
+* Tipos
