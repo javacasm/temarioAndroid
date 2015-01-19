@@ -19,13 +19,21 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+    public void pulsacionCE(View v)
+    {
+        View vResultado=findViewById(R.id.tvResultado);
+        TextView tvResultado=(TextView)vResultado;
+
+        tvResultado.setText("");
+    }
+
     public void pulsacion(View v)
     {
 
         Button bt=(Button)v;
         String strBtText=bt.getText().toString();
         String strTextoAviso="Pulsacion tecla "+strBtText+" !!!!";
-       // Toast.makeText(this, strTextoAviso, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, strTextoAviso, Toast.LENGTH_LONG).show();
 
         View vResultado=findViewById(R.id.tvResultado);
         TextView tvResultado=(TextView)vResultado;

@@ -192,7 +192,7 @@
             <Button
                 android:id="@+id/bC"
                 style="@style/boton.rojo"
-                android:onClick="pulsacion"
+                android:onClick="pulsacionCE"
                 android:text="@string/bc"
                 android:typeface="monospace" />
 
