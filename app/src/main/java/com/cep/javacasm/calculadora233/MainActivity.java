@@ -15,6 +15,12 @@ public class MainActivity extends ActionBarActivity {
 
     TextView tvResultado;
 
+    int iLongitudMaxima=11;
+
+    int operando1;
+
+    int idOperacion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,11 +48,65 @@ public class MainActivity extends ActionBarActivity {
         String strValorAntiguo=tvResultado.getText().toString();
         String strValorNuevo=strValorAntiguo+strBtText;
 
-        tvResultado.setText(strValorNuevo);
+        if(strValorNuevo.length() <= iLongitudMaxima)
+        {
+            tvResultado.setText(strValorNuevo);
+        }
+        else
+        {
+            Toast.makeText(this,R.string.LongitudMaxima,Toast.LENGTH_LONG).show();
+        }
+
+
+
+
 
 
     }
+    //int operador1;
+    public void pulsacionOperador(View v)
+    { // Se ha pulsado el operador  ....
 
+
+        // Recuperamos el operando 1 1
+        String strValorOperador1=tvResultado.getText().toString();
+        operando1=Integer.parseInt(strValorOperador1);
+
+        // Guardamos el operador pulsado
+        idOperacion=v.getId();
+
+        // borrar texto
+
+        pulsacionCE(v);
+
+     }
+
+    public void pulsacionIgual(View v)
+    { // Se ha pulsado el operador =
+        // guardar 2º operando
+        String strOperando2=tvResultado.getText().toString();
+        int operando2=Integer.parseInt(strOperando2);
+
+        // En funcion del operador hacer el calculo
+        int iResultado;
+        if(idOperacion==R.id.bSuma)
+        {    iResultado=operando1+operando2;          }
+
+        if(idOperacion==R.id.bResta)
+        {    iResultado=operando1-operando2;         }
+
+        if(idOperacion==R.id.bMultiplicacion)
+        {    iResultado=operando1*operando2;         }
+
+        if(idOperacion==R.id.bDivision)
+        {    iResultado=operando1/operando2;         }
+
+        // Comprobar la longitud del resultado
+
+        // Mostrar el resultado
+
+
+    }
     public void teclaPunto(View v) {
         Toast.makeText(this, R.string.noImplementado, Toast.LENGTH_LONG).show();
     }

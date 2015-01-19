@@ -59,7 +59,7 @@
                 style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="pulsacion"
+                android:onClick="pulsacionOperador"
                 android:text="@string/bmas" />
 
         </TableRow>
@@ -100,7 +100,7 @@
                 style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="pulsacion"
+                android:onClick="pulsacionOperador"
                 android:text="@string/bmenos" />
 
         </TableRow>
@@ -141,7 +141,7 @@
                 style="@style/boton.weight1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="pulsacion"
+                android:onClick="pulsacionOperador"
                 android:text="@string/bpor" />
 
         </TableRow>
@@ -171,7 +171,7 @@
             <Button
                 android:id="@+id/bDivision"
                 style="@style/boton.weight1"
-                android:onClick="pulsacion"
+                android:onClick="pulsacionOperador"
                 android:text="@string/bdivido" />
 
         </TableRow>
@@ -186,7 +186,7 @@
             <Button
                 android:id="@+id/bIgual"
                 style="@style/boton.weight1"
-                android:onClick="pulsacion"
+                android:onClick="pulsacionIgual"
                 android:text="@string/bigual" />
 
             <Button
