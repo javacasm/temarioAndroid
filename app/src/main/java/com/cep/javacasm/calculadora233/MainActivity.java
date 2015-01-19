@@ -54,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
         }
         else
         {
-            Toast.makeText(this,R.string.LongitudMaxima,Toast.LENGTH_LONG).show();
+            Toast.makeText(this,R.string.longitudMaxima,Toast.LENGTH_LONG).show();
         }
 
 
@@ -99,16 +99,25 @@ public class MainActivity extends ActionBarActivity {
         {    iResultado=operando1*operando2;         }
 
         if(idOperacion==R.id.bDivision)
-        {    iResultado=operando1/operando2;         }
+        {
+            if(operando2!=0) {
+                iResultado = operando1 / operando2;
+            }
+            else
+            { Toast.makeText(this,R.string.divisionPorCero,Toast.LENGTH_LONG).show();
+                pulsacionCE(v);}
+        }
+
+
+        // Mostrar el resultado
 
         // Comprobar la longitud del resultado
 
-        // Mostrar el resultado
         String strResultado=Integer.toString(iResultado);
         if(strResultado.length()<iLongitudMaxima)
         {tvResultado.setText(strResultado);         }
         else {
-            Toast.makeText(this, R.string.LongitudMaxima, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.longitudMaxima, Toast.LENGTH_LONG).show();
             pulsacionCE(v);
         }
 

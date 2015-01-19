@@ -25,5 +25,6 @@
     <string name="bigual">=</string>
     <string name="bmas">+</string>
     <string name="noImplementado">No implementado</string>
-    <string name="LongitudMaxima">Longitud máxima</string>
+    <string name="longitudMaxima">Longitud máxima</string>
+    <string name="divisionPorCero">No se puede dividir por 0</string>
 </resources>
