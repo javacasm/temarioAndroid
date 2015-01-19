@@ -59,6 +59,11 @@
 * TableLayout
 * AbsoluteLayout
 
+#### Ejemplo de layouts de aplicaciones: Login, calculadora
+
+#### Construcción de la estructura de la pantalla de una calculadora, memory
+
+
 ### Componentes
 
 #### Tipos
@@ -66,6 +71,17 @@
 * TextView
 * EditText
 * ImageView
+
+#### Propiedades
+* Layout
+* Text
+* Aspecto
+
+* Ejemplo de propiedades en diversos controles
+
+#### Estilos
+* Utilidad
+* Generación de estilos (extract)
 
 #### Acceso a los componentes
 * findViewByID
@@ -77,6 +93,7 @@
 * Toast
 * ¿Otros eventos?: onCreate
 
+* Ejemplo: calculadora muestra pulsación
 
 ## Activities
 
