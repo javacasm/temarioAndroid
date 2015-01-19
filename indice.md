@@ -94,6 +94,15 @@
 * ¿Otros eventos?: onCreate
 
 * Ejemplo: calculadora muestra pulsación
+* Ejercicio: tecla ".", "0" como valor inicial
+
+## Depuracion
+
+* Uso del emulador para depuracion
+* Puntos de ruptura
+* Ver variables
+* Parar, continuar, saltar, ...
+
 
 ## Activities
 
