@@ -58,10 +58,6 @@ public class MainActivity extends ActionBarActivity {
         }
 
 
-
-
-
-
     }
     //int operador1;
     public void pulsacionOperador(View v)
