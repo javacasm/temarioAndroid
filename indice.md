@@ -59,10 +59,22 @@
 * TableLayout
 * AbsoluteLayout
 
+### Modificadores visuales
+
+* Weight
+* Gravity
+
 #### Ejemplo de layouts de aplicaciones: Login, calculadora
 
-#### Construcción de la estructura de la pantalla de una calculadora, memory
+#### Construcción de la estructura compleja de la pantalla de una calculadora, juego tipo memory
 
+Se usan:
+
+* TableLayout
+* TableRow
+* Views
+* Estilos
+* Weight
 
 ### Componentes
 
@@ -91,8 +103,8 @@
 
 #### Eventos: Listener
 
-* OnClic
-* Toast
+* OnClicK
+* Notificaciones: Toast
 * ¿Otros eventos?: onCreate
 
 * Ejemplo: calculadora muestra pulsación
