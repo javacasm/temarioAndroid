@@ -87,6 +87,8 @@
 * findViewByID
 * Casting
 
+* Ejemplo: crear una variable global con el control "cacheado"
+
 #### Eventos: Listener
 
 * OnClic
@@ -102,6 +104,11 @@
 * Puntos de ruptura
 * Ver variables
 * Parar, continuar, saltar, ...
+
+### Errores frecuentes
+
+* Distinto nombre de la función de eventos y en fichero xml
+* No se inicializan las variables
 
 
 ## Activities
