@@ -165,7 +165,7 @@
             <Button
                 android:id="@+id/bPunto"
                 style="@style/boton.weight1"
-                android:onClick="pulsacion"
+                android:onClick="teclaPunto"
                 android:text="@string/bpunto" />
 
             <Button

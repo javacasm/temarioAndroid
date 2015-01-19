@@ -12,34 +12,39 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
+
+    TextView tvResultado;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        View vResultado=findViewById(R.id.tvResultado);
+        tvResultado=(TextView)vResultado;
     }
 
-
     public void pulsacionCE(View v)
-    {
-        View vResultado=findViewById(R.id.tvResultado);
-        TextView tvResultado=(TextView)vResultado;
-
+    {//   View vResultado=findViewById(R.id.tvResultado);
+//        TextView tvResultado=(TextView)vResultado;
         tvResultado.setText("");
     }
 
     public void pulsacion(View v)
     {
-
         Button bt=(Button)v;
         String strBtText=bt.getText().toString();
         String strTextoAviso="Pulsacion tecla "+strBtText+" !!!!";
         Toast.makeText(this, strTextoAviso, Toast.LENGTH_LONG).show();
-
-        View vResultado=findViewById(R.id.tvResultado);
-        TextView tvResultado=(TextView)vResultado;
+//        View vResultado=findViewById(R.id.tvResultado);
+//        TextView tvResultado=(TextView)vResultado;
         String strValorAntiguo=tvResultado.getText().toString();
         String strValorNuevo=strValorAntiguo+strBtText;
         tvResultado.setText(strValorNuevo);
+    }
+
+    public void teclaPunto(View v) {
+        Toast.makeText(this, R.string.noImplementado, Toast.LENGTH_LONG).show();
     }
 
     @Override
