@@ -40,6 +40,7 @@ public class MainActivity extends ActionBarActivity {
 //        TextView tvResultado=(TextView)vResultado;
         String strValorAntiguo=tvResultado.getText().toString();
         String strValorNuevo=strValorAntiguo+strBtText;
+        
         tvResultado.setText(strValorNuevo);
     }
 
