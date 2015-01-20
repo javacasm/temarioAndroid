@@ -114,13 +114,12 @@ public class MainActivity extends ActionBarActivity {
                 iResultado = operando1 * operando2;             }
 
             if (idOperacion == R.id.bDivision) {
-                iResultado = operando1 / operando2;
-               /* if (operando2 != 0) {
+                if (operando2 != 0) {
                     iResultado = operando1 / operando2;
                 } else {
                     Toast.makeText(this, R.string.divisionPorCero, Toast.LENGTH_LONG).show();
                     pulsacionCE(v);
-                } */
+                }
             }
             // Mostrar el resultado
             // Comprobar la longitud del resultado
