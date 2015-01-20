@@ -23,11 +23,13 @@ public class MainActivity extends ActionBarActivity {
     // guardaremos el id del botón de cada operación
     int idOperacion;
 
+    // Método inicial de la aplicación donde se crea la estructura visual
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Obtenemos la referencia a la caja de texto
         View vResultado=findViewById(R.id.tvResultado);
         tvResultado=(TextView)vResultado;
     }
@@ -35,23 +37,27 @@ public class MainActivity extends ActionBarActivity {
     // Realiza las tareas de borrado completo
     public void pulsacionCE(View v)
     {
+        // Recupera el texto inicial (o 0 o "")
         String strTextoInicial=getString(R.string.valorInicialCajaDeTexto);
         tvResultado.setText(strTextoInicial);
     }
 
 
-    // TODO: Borra el último caracter
+    // Borra el último caracter
     public void pulsacionAC(View v)
     {
         try {
+            // Recuperamos el contenido
             String strTexto = tvResultado.getText().toString();
+            // Vemos la longitud del texto
             int longitud = strTexto.length();
-            if (longitud > 1) {
+            if (longitud > 1) {  // Si hay más de 1 caracter quitamos el último
                 String strTextoRecortado = strTexto.substring(0, longitud - 1);
+                // Ponemos el contenido en la caja de texto
                 tvResultado.setText(strTextoRecortado);
             }
-            if (longitud == 1)
-                tvResultado.setText(getText(R.string.valorInicialCajaDeTexto));
+            if (longitud == 1) // Si solo hay 1 caracter ponemos el texto inicial
+            {   tvResultado.setText(getText(R.string.valorInicialCajaDeTexto)); }
         }
         catch(Exception e)
         { Toast.makeText(this,R.string.error,Toast.LENGTH_LONG).show();}
@@ -62,30 +68,27 @@ public class MainActivity extends ActionBarActivity {
     {
         Button bt=(Button)v;
         String strBtText=bt.getText().toString();
-        String strTextoAviso="Pulsacion tecla "+strBtText+" !!!!";
+      //   String strTextoAviso="Pulsacion tecla "+strBtText+" !!!!";
       //  Toast.makeText(this, strTextoAviso, Toast.LENGTH_LONG).show();
 
+        // Recuperamos el valor antiguo
         String strValorAntiguo=tvResultado.getText().toString();
 
         String strValorNuevo;
-        if(strValorAntiguo.equals("0"))
-            strValorNuevo=strBtText;
+        if(strValorAntiguo.equals("0"))   // Si solo hay 0 ponemos el valor
+        {   strValorNuevo=strBtText;}
         else
-            strValorNuevo=strValorAntiguo+strBtText;
+        {   strValorNuevo=strValorAntiguo+strBtText; } // añadimos la nueva pulsación
 
-        if(strValorNuevo.length() <= iLongitudMaxima)
-        {
-            tvResultado.setText(strValorNuevo);
-        }
+        if(strValorNuevo.length() <= iLongitudMaxima)  // Si no hemos llegado a la longitud máxima ponemos el texto
+        {   tvResultado.setText(strValorNuevo);     }
         else
-        {
-            Toast.makeText(this,R.string.longitudMaxima,Toast.LENGTH_LONG).show();
-        }
+        {   Toast.makeText(this,R.string.longitudMaxima,Toast.LENGTH_LONG).show();      }
 
 
     }
-    //Pulsación sobre un botón de operador + - / *
 
+    //Pulsación sobre un botón de operador + - / *
     public void pulsacionOperador(View v)
     { // Se ha pulsado el operador  ....
       // TODO: Añadir código para avisar al usuario
