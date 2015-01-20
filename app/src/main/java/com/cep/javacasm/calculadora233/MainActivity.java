@@ -55,7 +55,14 @@ public class MainActivity extends ActionBarActivity {
 
         String strValorAntiguo=tvResultado.getText().toString();
 
-        String strValorNuevo=strValorAntiguo+strBtText;
+        String strValorNuevo;
+        if(strValorAntiguo.equals("0"))
+            strValorNuevo=strBtText;
+        else
+            strValorNuevo=strValorAntiguo+strBtText;
+
+
+
 
         if(strValorNuevo.length() <= iLongitudMaxima)
         {
