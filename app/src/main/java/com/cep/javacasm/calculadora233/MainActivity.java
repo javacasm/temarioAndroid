@@ -12,13 +12,15 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
-
+    // Caja de texto que representa a la pantalla
     TextView tvResultado;
-
+    // Númeor máximo de cifras que usaremos
     int iLongitudMaxima=11;
 
+    // guardaremos el primer operando a usar
     int operando1;
 
+    // guardaremos el id del botón de cada operación
     int idOperacion;
 
     @Override
@@ -30,21 +32,27 @@ public class MainActivity extends ActionBarActivity {
         tvResultado=(TextView)vResultado;
     }
 
+    // Realiza las tareas de borrado completo
     public void pulsacionCE(View v)
     {
-    //   View vResultado=findViewById(R.id.tvResultado);
-//        TextView tvResultado=(TextView)vResultado;
-        tvResultado.setText("");
+           tvResultado.setText("");
     }
 
+
+    // TODO: Borra el último caracter
+    public void pulsacionC(View v)
+    {
+
+    }
+
+    // Pulsación de un número
     public void pulsacion(View v)
     {
         Button bt=(Button)v;
         String strBtText=bt.getText().toString();
         String strTextoAviso="Pulsacion tecla "+strBtText+" !!!!";
-        Toast.makeText(this, strTextoAviso, Toast.LENGTH_LONG).show();
-//        View vResultado=findViewById(R.id.tvResultado);
-//        TextView tvResultado=(TextView)vResultado;
+      //  Toast.makeText(this, strTextoAviso, Toast.LENGTH_LONG).show();
+
         String strValorAntiguo=tvResultado.getText().toString();
         String strValorNuevo=strValorAntiguo+strBtText;
 
@@ -59,7 +67,8 @@ public class MainActivity extends ActionBarActivity {
 
 
     }
-    //int operador1;
+    //Pulsación sobre un botón de operador + - / *
+
     public void pulsacionOperador(View v)
     { // Se ha pulsado el operador  ....
 
@@ -77,8 +86,9 @@ public class MainActivity extends ActionBarActivity {
 
      }
 
+    // Se ha pulsado el operador =
     public void pulsacionIgual(View v)
-    { // Se ha pulsado el operador =
+    {
         // guardar 2º operando
         String strOperando2=tvResultado.getText().toString();
         int operando2=Integer.parseInt(strOperando2);
@@ -118,6 +128,8 @@ public class MainActivity extends ActionBarActivity {
         }
 
     }
+
+    // TODO: Uso de decimales
     public void teclaPunto(View v) {
         Toast.makeText(this, R.string.noImplementado, Toast.LENGTH_LONG).show();
     }
