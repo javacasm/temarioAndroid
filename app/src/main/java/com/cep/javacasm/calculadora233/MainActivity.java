@@ -91,16 +91,15 @@ public class MainActivity extends ActionBarActivity {
     //Pulsación sobre un botón de operador + - / *
     public void pulsacionOperador(View v)
     { // Se ha pulsado el operador  ....
-      // TODO: Añadir código para avisar al usuario
-        try {
-            // Recuperamos el operando 1 1
+       try {
+            // Recuperamos el operando 1
             String strValorOperador1 = tvResultado.getText().toString();
             operando1 = Integer.parseInt(strValorOperador1);
 
             // Guardamos el operador pulsado
             idOperacion = v.getId();
 
-            // borrar texto
+            // borrar texto del primer operando
             pulsacionCE(v);
         }
         catch (Exception e)
@@ -118,17 +117,17 @@ public class MainActivity extends ActionBarActivity {
 
             // En funcion del operador hacer el calculo
             int iResultado = 0;
-            if (idOperacion == R.id.bSuma) {
-                iResultado = operando1 + operando2;              }
+            if (idOperacion == R.id.bSuma)
+            {   iResultado = operando1 + operando2;  }
 
-            if (idOperacion == R.id.bResta) {
-                iResultado = operando1 - operando2;             }
+            if (idOperacion == R.id.bResta)
+            {    iResultado = operando1 - operando2; }
 
-            if (idOperacion == R.id.bMultiplicacion) {
-                iResultado = operando1 * operando2;             }
+            if (idOperacion == R.id.bMultiplicacion)
+            {    iResultado = operando1 * operando2; }
 
-            if (idOperacion == R.id.bDivision) {
-                if (operando2 != 0) {
+            if (idOperacion == R.id.bDivision)
+            {   if (operando2 != 0) {
                     iResultado = operando1 / operando2;
                 } else {
                     Toast.makeText(this, R.string.divisionPorCero, Toast.LENGTH_LONG).show();
@@ -136,10 +135,10 @@ public class MainActivity extends ActionBarActivity {
                 }
             }
 
+            // El % requiere que pulsemos el operador * y como igual %
             if( (idOperacion==R.id.bMultiplicacion) && (v.getId() == R.id.bPorcent))
-            {
-                iResultado=operando1*operando2/100;
-            }
+            {   iResultado=operando1*operando2/100;         }
+
             // Mostrar el resultado
             // Comprobar la longitud del resultado
             String strResultado = Integer.toString(iResultado);
