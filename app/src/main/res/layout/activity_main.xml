@@ -200,6 +200,15 @@
                 android:text="@string/bigual" />
 
             <Button
+                style="@style/boton.rojo"
+                android:id="@+id/bac"
+                android:onClick="pulsacionAC"
+                android:text="@string/bac"
+                android:typeface="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
                 android:id="@+id/bC"
                 style="@style/boton.rojo"
                 android:onClick="pulsacionCE"

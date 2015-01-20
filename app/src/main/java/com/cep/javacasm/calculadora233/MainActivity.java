@@ -41,9 +41,20 @@ public class MainActivity extends ActionBarActivity {
 
 
     // TODO: Borra el último caracter
-    public void pulsacionC(View v)
+    public void pulsacionAC(View v)
     {
-
+        try {
+            String strTexto = tvResultado.getText().toString();
+            int longitud = strTexto.length();
+            if (longitud > 1) {
+                String strTextoRecortado = strTexto.substring(0, longitud - 1);
+                tvResultado.setText(strTextoRecortado);
+            }
+            if (longitud == 1)
+                tvResultado.setText(getText(R.string.valorInicialCajaDeTexto));
+        }
+        catch(Exception e)
+        { Toast.makeText(this,R.string.error,Toast.LENGTH_LONG).show();}
     }
 
     // Pulsación de un número
