@@ -170,3 +170,13 @@ Se usan:
 * Contenidos
 * Tipos
 
+## Documentacion
+¿donde?
+
+## Encontrar error entre los messages
+
+## Diferentes layouts
+
+## Depuracion con el movil
+
+## publicacion de aplicaciones
