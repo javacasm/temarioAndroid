@@ -27,4 +27,6 @@
     <string name="noImplementado">No implementado</string>
     <string name="longitudMaxima">Longitud máxima</string>
     <string name="divisionPorCero">No se puede dividir por 0</string>
+    <string name="error">Se ha producido un error</string>
+    <string name="valorInicialCajaDeTexto">0</string>
 </resources>

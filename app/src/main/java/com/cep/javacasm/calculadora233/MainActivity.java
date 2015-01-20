@@ -35,7 +35,8 @@ public class MainActivity extends ActionBarActivity {
     // Realiza las tareas de borrado completo
     public void pulsacionCE(View v)
     {
-           tvResultado.setText("");
+        String strTextoInicial=getString(R.string.valorInicialCajaDeTexto);
+        tvResultado.setText(strTextoInicial);
     }
 
 
@@ -61,9 +62,6 @@ public class MainActivity extends ActionBarActivity {
         else
             strValorNuevo=strValorAntiguo+strBtText;
 
-
-
-
         if(strValorNuevo.length() <= iLongitudMaxima)
         {
             tvResultado.setText(strValorNuevo);
@@ -80,18 +78,19 @@ public class MainActivity extends ActionBarActivity {
     public void pulsacionOperador(View v)
     { // Se ha pulsado el operador  ....
 
+        try {
+            // Recuperamos el operando 1 1
+            String strValorOperador1 = tvResultado.getText().toString();
+            operando1 = Integer.parseInt(strValorOperador1);
 
-        // Recuperamos el operando 1 1
-        String strValorOperador1=tvResultado.getText().toString();
-        operando1=Integer.parseInt(strValorOperador1);
+            // Guardamos el operador pulsado
+            idOperacion = v.getId();
 
-        // Guardamos el operador pulsado
-        idOperacion=v.getId();
-
-        // borrar texto
-
-        pulsacionCE(v);
-
+            // borrar texto
+            pulsacionCE(v);
+        }
+        catch (Exception e)
+        { Toast.makeText(this,R.string.error,Toast.LENGTH_LONG).show();}
      }
 
     // Se ha pulsado el operador =
