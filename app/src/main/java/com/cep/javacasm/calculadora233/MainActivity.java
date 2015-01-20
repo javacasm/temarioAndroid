@@ -54,6 +54,7 @@ public class MainActivity extends ActionBarActivity {
       //  Toast.makeText(this, strTextoAviso, Toast.LENGTH_LONG).show();
 
         String strValorAntiguo=tvResultado.getText().toString();
+
         String strValorNuevo=strValorAntiguo+strBtText;
 
         if(strValorNuevo.length() <= iLongitudMaxima)
@@ -89,42 +90,45 @@ public class MainActivity extends ActionBarActivity {
     // Se ha pulsado el operador =
     public void pulsacionIgual(View v)
     {
-        // guardar 2º operando
-        String strOperando2=tvResultado.getText().toString();
-        int operando2=Integer.parseInt(strOperando2);
+        try {
+            // guardar 2º operando
+            String strOperando2 = tvResultado.getText().toString();
+            int operando2 = Integer.parseInt(strOperando2);
 
-        // En funcion del operador hacer el calculo
-        int iResultado=0;
-        if(idOperacion==R.id.bSuma)
-        {    iResultado=operando1+operando2;          }
+            // En funcion del operador hacer el calculo
+            int iResultado = 0;
+            if (idOperacion == R.id.bSuma) {
+                iResultado = operando1 + operando2;              }
 
-        if(idOperacion==R.id.bResta)
-        {    iResultado=operando1-operando2;         }
+            if (idOperacion == R.id.bResta) {
+                iResultado = operando1 - operando2;             }
 
-        if(idOperacion==R.id.bMultiplicacion)
-        {    iResultado=operando1*operando2;         }
+            if (idOperacion == R.id.bMultiplicacion) {
+                iResultado = operando1 * operando2;             }
 
-        if(idOperacion==R.id.bDivision)
-        {
-            if(operando2!=0) {
+            if (idOperacion == R.id.bDivision) {
                 iResultado = operando1 / operando2;
+               /* if (operando2 != 0) {
+                    iResultado = operando1 / operando2;
+                } else {
+                    Toast.makeText(this, R.string.divisionPorCero, Toast.LENGTH_LONG).show();
+                    pulsacionCE(v);
+                } */
             }
-            else
-            { Toast.makeText(this,R.string.divisionPorCero,Toast.LENGTH_LONG).show();
-                pulsacionCE(v);}
+            // Mostrar el resultado
+            // Comprobar la longitud del resultado
+            String strResultado = Integer.toString(iResultado);
+            if (strResultado.length() < iLongitudMaxima) {
+                tvResultado.setText(strResultado);
+            } else {
+                Toast.makeText(this, R.string.longitudMaxima, Toast.LENGTH_LONG).show();
+                pulsacionCE(v);
+            }
         }
-
-
-        // Mostrar el resultado
-
-        // Comprobar la longitud del resultado
-
-        String strResultado=Integer.toString(iResultado);
-        if(strResultado.length()<iLongitudMaxima)
-        {tvResultado.setText(strResultado);         }
-        else {
-            Toast.makeText(this, R.string.longitudMaxima, Toast.LENGTH_LONG).show();
-            pulsacionCE(v);
+        catch(Exception e)
+        {
+            String sTipoDeError=e.getMessage();
+            Toast.makeText(this,R.string.error,Toast.LENGTH_LONG).show();
         }
 
     }
