@@ -24,6 +24,7 @@
     <string name="bpunto">.</string>
     <string name="bigual">=</string>
     <string name="bmas">+</string>
+    <string name="bPorcent">%</string>
     <string name="noImplementado">No implementado</string>
     <string name="longitudMaxima">Longitud máxima</string>
     <string name="divisionPorCero">No se puede dividir por 0</string>

@@ -121,6 +121,11 @@ public class MainActivity extends ActionBarActivity {
                     pulsacionCE(v);
                 }
             }
+
+            if(idOperacion == R.id.bPorcent)
+            {
+                iResultado=operando1*operando2/100;
+            }
             // Mostrar el resultado
             // Comprobar la longitud del resultado
             String strResultado = Integer.toString(iResultado);

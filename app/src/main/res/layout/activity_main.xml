@@ -158,7 +158,7 @@
                 style="@style/boton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="6"
+                android:layout_weight="1"
                 android:onClick="pulsacion"
                 android:text="@string/b0" />
 
@@ -166,13 +166,23 @@
                 android:id="@+id/bPunto"
                 style="@style/boton.weight1"
                 android:onClick="teclaPunto"
-                android:text="@string/bpunto" />
+                android:text="@string/bpunto"
+                android:layout_weight="1" />
+
+            <Button
+                style="@style/boton.weight1"
+                android:id="@+id/bPorcent"
+                android:onClick="pulsacionOperador"
+                android:text="@string/bPorcent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/bDivision"
                 style="@style/boton.weight1"
                 android:onClick="pulsacionOperador"
-                android:text="@string/bdivido" />
+                android:text="@string/bdivido"
+                android:layout_weight="1" />
 
         </TableRow>
 
