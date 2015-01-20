@@ -122,7 +122,7 @@ public class MainActivity extends ActionBarActivity {
                 }
             }
 
-            if(idOperacion == R.id.bPorcent)
+            if( (idOperacion==R.id.bMultiplicacion) && (v.getId() == R.id.bPorcent))
             {
                 iResultado=operando1*operando2/100;
             }

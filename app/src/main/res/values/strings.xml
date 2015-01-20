@@ -20,7 +20,8 @@
     <string name="bmenos">-</string>
     <string name="bpor">x</string>
     <string name="bdivido">/</string>
-    <string name="bc">CE</string>
+    <string name="bc">C</string>
+    <string name="bce">CE</string>
     <string name="bpunto">.</string>
     <string name="bigual">=</string>
     <string name="bmas">+</string>
