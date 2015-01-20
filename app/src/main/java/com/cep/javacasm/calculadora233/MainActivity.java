@@ -77,7 +77,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void pulsacionOperador(View v)
     { // Se ha pulsado el operador  ....
-
+      // TODO: Añadir código para avisar al usuario
         try {
             // Recuperamos el operando 1 1
             String strValorOperador1 = tvResultado.getText().toString();
@@ -90,7 +90,8 @@ public class MainActivity extends ActionBarActivity {
             pulsacionCE(v);
         }
         catch (Exception e)
-        { Toast.makeText(this,R.string.error,Toast.LENGTH_LONG).show();}
+        {   Toast.makeText(this,R.string.error,Toast.LENGTH_LONG).show();
+            pulsacionCE(v);}
      }
 
     // Se ha pulsado el operador =
