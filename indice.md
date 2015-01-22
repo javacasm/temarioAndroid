@@ -170,6 +170,10 @@ Se usan:
 * Contenidos
 * Tipos
 
+## Emuladores alernativos
+
+* GennyMotion
+
 ## Documentacion
 ¿donde?
 
