@@ -116,7 +116,7 @@ Se usan:
 
 #### Acceso a los componentes
 
-* findViewByID
+* findViewByID (detección de controles no disponibles)
 * Casting
 
 * Ejemplo: crear una variable global con el control "cacheado"
@@ -170,6 +170,10 @@ Se usan:
 * Contenidos
 * Tipos
 
+## Emuladores alternativos
+
+* GennyMotion
+
 ## Documentacion
 ¿donde?
 
@@ -179,4 +183,4 @@ Se usan:
 
 ## Depuracion con el movil
 
-## publicacion de aplicaciones
+## Publicacion de aplicaciones
