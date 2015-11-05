@@ -1,1 +1,1 @@
-Documentación del curso de programación de Android de 2014 en el CEP de Jaen
+Documentación del curso de programación de Android de 2015 en el CEP de Linares
