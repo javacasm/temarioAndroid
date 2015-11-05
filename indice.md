@@ -21,17 +21,18 @@
 
 ## Instalación del IDE
 
+### Instalación de Android Studio
+
+* Instalación y configuración
+* Problemas con Java
+* Problemas de rendimiento
+* Gradle
+
 ### Instalación de eclipse
 
 * ¿qué es ADT?
 * Instalación del bundle
 
-### Instalación de Android Studio
-
-* Instaláción y configuración
-* Problemas con Java
-* Problemas de rendimiento
-* Gradle
 
 ### Elementos comunes
 
