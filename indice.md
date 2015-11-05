@@ -184,3 +184,9 @@ Se usan:
 ## Depuracion con el movil
 
 ## Publicacion de aplicaciones
+
+## Aplicaciones open-source
+
+[OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home)
+[Open source android apps](https://en.wikipedia.org/wiki/List_of_free_and_open-source_Android_applications)
+[open source android games](https://github.com/leereilly/games#user-content-android)
