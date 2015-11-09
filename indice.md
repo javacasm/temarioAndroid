@@ -23,8 +23,8 @@
 
 ### Instalación de Android Studio
 
-* Instalación y configuración
-* Problemas con Java
+* Instalación y configuración. [Descarga](http://developer.android.com/sdk/index.html#Other) [instalacion](http://developer.android.com/sdk/installing/index.html?pkg=studio)
+* Problemas con Java [Descarga](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
 * Problemas de rendimiento
 * Gradle
 
