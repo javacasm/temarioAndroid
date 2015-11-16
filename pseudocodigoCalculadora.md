@@ -16,5 +16,5 @@ borramos último numero -> teclaC
 	borramos numero en el visor
 reiniciamos -> teclaAC
 	inicializar
-		borrar operandos y operador
-		borrar visor
+		borrar operandos y operador -> Inicializacion
+		borrar visor ->teclaC
