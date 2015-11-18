@@ -1,1 +1,2 @@
-Documentación del curso de programación de Android de 2015 en el CEP de Linares
+# Curso de  programación en Java para Android 
+Noviembre de 2015 en el CEP de Linares
