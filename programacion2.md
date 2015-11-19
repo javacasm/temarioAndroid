@@ -105,10 +105,16 @@ Podemos usar:
 * Una medida de tiempos "a mano"
 * Un control del interface de tiempos Chronometer
 
+Para poner a 0 el tiempo, lo que tenemos que hacer es establecer el tiempo base del cronómetro (algo así como poner en hora)
+
+	mChronometer.setBase(SystemClock.elapsedRealtime());
+
+de http://stackoverflow.com/questions/5345697/chronometer-reset y http://developer.android.com/reference/android/widget/Chronometer.html#setBase(long)
+
 
 ## Des-Ordenación de cartas
 
-¿Funciona shufle?
+¿Funciona shufle? http://www.vogella.com/tutorials/JavaAlgorithmsShuffle/article.html
 
 ![PseudocodigoACodigo](./imagenes/PseudocodigoACodigo.png)
 ![PseudocodigoACodigo2](./imagenes/PseudocodigoACodigo2.png)
