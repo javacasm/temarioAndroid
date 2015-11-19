@@ -54,6 +54,8 @@ Añadiremos a las funciones pseudocódigo para indicar las tareas que se deben r
 
 Ahora vamos a ir declarando las variables necesarias para realizar las tareas que hemos indicado en las funciones
 
+TODO: ¿usar Tag?
+
     int []imagenBoton={R.drawable.conejo,R.drawable.oveja,R.drawable.pollo,
             R.drawable.conejo,R.drawable.oveja,R.drawable.pollo,
             R.drawable.rinoceronte,R.drawable.serpiente,R.drawable.tiburon,
@@ -89,10 +91,26 @@ Ahora vamos a completar el código. La mayor parte tiene una traducción directa
 
 donde vemos que iteramos por medio de un bucle a lo largo de todos los ids hasta encontrar la del control pulsado. En ese caso guardamos la posición en a variable iNumeroBotonPulsado
 
+## Sonido
+
 ## Eventos en diferido
 
 Una característica de Android es ...
 
 TODO: Handler
 
-## Sonido
+## Tiempo
+
+Podemos usar:
+* Una medida de tiempos "a mano"
+* Un control del interface de tiempos Chronometer
+
+
+## Des-Ordenación de cartas
+
+¿Funciona shufle?
+
+![PseudocodigoACodigo](./imagenes/PseudocodigoACodigo.png)
+![PseudocodigoACodigo2](./imagenes/PseudocodigoACodigo2.png)
+
+## Start y stop del juego
