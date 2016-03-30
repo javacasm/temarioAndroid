@@ -1,4 +1,14 @@
-# Programación en Android
+# Curso de programación para Android Java
+
+## Marzo-Abril de 2016. CEP de Granada
+
+## José Antonio Vacas @javacasm
+
+javacasm@gmail.com
+
+![cc](https://raw.githubusercontent.com/javacasm/CodeWeek-programacion/master/images/Licencia_CC.png)
+
+
 
 ## Introducción a Android
 
@@ -23,16 +33,15 @@
 
 ### Instalación de Android Studio
 
-* [Requisitos](https://github.com/javacasm/AndroidJava2015/blob/master/requisitos.md)
+* [Requisitos](./requisitos.md)
 
 * Instalación y configuración. [Descarga](http://developer.android.com/sdk/index.html#Other) [instalacion](http://developer.android.com/sdk/installing/index.html?pkg=studio)
 * Problemas con Java [Descarga](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
 * Problemas de rendimiento
 * Gradle
 
-### Instalación de eclipse
+### Instalación de Android Studio
 
-* ¿qué es ADT?
 * Instalación del bundle
 
 
@@ -57,7 +66,7 @@
 ### Recursos
 
 * Configuración Visual
-	
+
 	* Layout
 	* Views
 	* Estilos
@@ -65,7 +74,7 @@
 
 * Cadenas
 
-* Ejemplo: pantalla de login. 
+* Ejemplo: pantalla de login.
 
 ## Estructura visual
 
