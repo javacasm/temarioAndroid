@@ -1,5 +1,16 @@
+# Desarrollo de aplicaciones Android (161811FP07)
+
+## Marzo-Abril de 2016. CEP de Granada
+
+## José Antonio Vacas @javacasm
+
+javacasm@gmail.com
+
+![cc](https://raw.githubusercontent.com/javacasm/CodeWeek-programacion/master/images/Licencia_CC.png)
+
 # Programación 2
-Vamos a ver algunas técnias más avanzadas de programación, como pueden ser crear arrays de id o de atributos.
+
+Vamos a ver algunas técnicas más avanzadas de programación, como pueden ser crear arrays de id o de atributos.
 
 Para ello vamos a hacer una programación TopDown, es decir, empezaremos creando la estructura del código a partir del [pseudocódigo](./presudocodigoMemory.md).
 
@@ -38,7 +49,7 @@ Añadiremos a las funciones pseudocódigo para indicar las tareas que se deben r
 
         // TODO: ¿EsLaPrimera?
         // TODO:	SI Volteamos
-        // TODO:    NO 
+        // TODO:    NO
             // TODO: Si imágenes iguales
                 // TODO: actualizar visor puntuacion
                 // TODO: sonido victoria
@@ -74,7 +85,7 @@ TODO: ¿usar Tag?
     int idBotonPrimeroPulsado=0;
     int idBotonSegundoPulsado=0;
     int idImagenPrimerBotonPulsado=0;
-    
+
 ## Código
 
 Ahora vamos a completar el código. La mayor parte tiene una traducción directa. Sólo vamos a comenta el método que busca un control en toda la lista disponible
