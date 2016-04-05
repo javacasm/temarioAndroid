@@ -1,4 +1,4 @@
-# Curso de programación para Android Java
+# Desarrollo de aplicaciones Android (161811FP07)
 
 ## Marzo-Abril de 2016. CEP de Granada
 
