@@ -1,4 +1,4 @@
-# Curso de programación para Android Java
+# Desarrollo de aplicaciones Android (161811FP07)
 
 ## Marzo-Abril de 2016. CEP de Granada
 
@@ -7,6 +7,7 @@
 javacasm@gmail.com
 
 ![cc](https://raw.githubusercontent.com/javacasm/CodeWeek-programacion/master/images/Licencia_CC.png)
+
 
 
 ## Contenidos
@@ -24,8 +25,4 @@ javacasm@gmail.com
 3. Componentes de pantallas: Layouts
 	* Adaptación a diferentes resoluciones y dispositivos
 
-4. Bases de datos
-	* Operaciones de listado, insercion, eliminación y actualización
-	* Controles avanzados y datos
-
-5. Desarrollo de proyectos
+4. Desarrollo de proyectos
